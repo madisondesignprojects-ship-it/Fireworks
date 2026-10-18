@@ -1,30 +1,536 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10203b"><meta name="description" content="PyroPeak Fireworks — browse fireworks for your next celebration."><title>PyroPeak Fireworks | Make Your Night Count</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#10203b;--blue:#214c7d;--red:#e82d3a;--gold:#ffc94f;--cream:#f7f5f0;--ink:#18243a;--muted:#657187;--line:#e3e7ee;--max:1220px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.announce{background:var(--red);color:white;text-align:center;padding:9px 12px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.announce b{color:var(--gold);padding:0 10px}.head{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 5px 24px #10203b12}.headin{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{display:flex;align-items:center;gap:11px}.mark{width:43px;height:43px;display:grid;place-items:center;color:white;background:var(--red);clip-path:polygon(50% 0,62% 35%,100% 22%,77% 50%,100% 70%,63% 68%,50% 100%,37% 68%,0 70%,23% 50%,0 22%,38% 35%);font-size:22px}.wordmark{font:900 29px/.8 'Barlow Condensed',sans-serif;color:var(--navy);letter-spacing:.02em}.wordmark small{display:block;margin-top:8px;color:var(--red);font:800 9px 'DM Sans',sans-serif;letter-spacing:.25em}.nav{display:flex;align-items:center;gap:25px;font-size:11px;font-weight:800;text-transform:uppercase}.nav a:hover{color:var(--red)}.nav .navbtn{background:var(--navy);color:white;padding:14px 17px;border-radius:2px}.nav .navbtn:hover{background:var(--red);color:white}.menu{display:none;background:white;border:1px solid var(--line);padding:6px 12px;font-size:23px;color:var(--navy)}
-.hero{position:relative;min-height:610px;display:flex;align-items:center;background:var(--navy);color:white;overflow:hidden}.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,#0a1830f5 0%,#0a1830d9 42%,#0a183033 100%),url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&w=2200&q=90') center/cover}.hero:after{content:"";height:7px;position:absolute;bottom:0;left:0;right:0;background:linear-gradient(90deg,var(--red) 0 33.3%,white 33.3% 66.6%,var(--blue) 66.6%)}.hero-content{position:relative;z-index:1;max-width:740px;padding:80px 0 92px}.eyebrow{color:var(--red);font-size:10px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:25px;height:3px;background:currentColor}.hero .eyebrow{color:var(--gold)}h1,h2,h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;line-height:.93;margin:0}h1{font-size:clamp(66px,9.5vw,116px);letter-spacing:-.025em;margin:20px 0}h1 span{color:var(--gold)}.hero p{max-width:500px;color:#e1e6ef;line-height:1.8;font-size:15px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:13px;background:var(--red);color:white;padding:15px 19px;border:2px solid var(--red);border-radius:2px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;transition:.2s}.btn:hover{background:#c9202c;border-color:#c9202c;transform:translateY(-2px)}.btn.white{background:#fff;color:var(--navy);border-color:#fff}.btn.white:hover{background:var(--gold);border-color:var(--gold)}.hero-proof{display:flex;gap:28px;flex-wrap:wrap;border-top:1px solid #ffffff3b;margin-top:40px;padding-top:18px}.hero-proof strong{display:block;font:800 21px 'Barlow Condensed',sans-serif}.hero-proof span{display:block;font-size:9px;color:#c5cfdf;letter-spacing:.09em;text-transform:uppercase;margin-top:3px}
-.benefits{background:var(--navy);color:white}.benefit-row{display:grid;grid-template-columns:repeat(3,1fr)}.benefit{display:flex;align-items:center;gap:14px;padding:20px 24px;border-right:1px solid #ffffff24}.benefit:first-child{padding-left:0}.benefit:last-child{border:0}.benefit i{font-style:normal;display:grid;place-items:center;flex-shrink:0;width:43px;height:43px;border:1px solid #ffffff35;background:#ffffff0d;color:var(--gold);font-size:20px}.benefit strong{font-size:11px;display:block;text-transform:uppercase;letter-spacing:.04em}.benefit small{display:block;font-size:10px;color:#b9c5d7;line-height:1.5;margin-top:4px}
-.section{padding:84px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:34px}.section-head h2{font-size:clamp(44px,6vw,67px);color:var(--navy);margin-top:12px}.section-head p{max-width:385px;font-size:12px;line-height:1.9;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:white;border:1px solid var(--line);box-shadow:0 7px 20px #10203b08;transition:.25s;overflow:hidden}.card:hover{transform:translateY(-5px);box-shadow:0 18px 30px #10203b16}.card-img{height:205px;position:relative;background-size:cover;background-position:center;background-color:#243a5b}.card-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0a183070,transparent 60%)}.card-img b{position:absolute;z-index:1;top:13px;left:13px;background:var(--gold);color:var(--navy);padding:7px 9px;font-size:9px;text-transform:uppercase;letter-spacing:.08em}.aerial{background-image:url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&w=800&q=85')}.assort{background-image:url('https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?auto=format&fit=crop&w=800&q=85')}.fountain{background-image:url('https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?auto=format&fit=crop&w=800&q=85')}.sparklers{background-image:url('https://images.unsplash.com/photo-1533236897111-3e94666b2edf?auto=format&fit=crop&w=800&q=85')}.card-body{padding:18px}.card h3{font-size:27px;color:var(--navy);margin-bottom:8px}.card p{font-size:11px;line-height:1.7;color:var(--muted);min-height:39px;margin:0 0 15px}.card-link{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:13px;color:var(--red);font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
-.feature{background:var(--navy);color:white;position:relative;overflow:hidden}.feature:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #ffffff1c;border-radius:50%;right:-150px;top:-190px;box-shadow:0 0 0 45px #ffffff08,0 0 0 100px #ffffff05}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;position:relative;z-index:1}.feature-photo{min-height:390px;position:relative;background:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=85') center/cover;border:8px solid #ffffff0c}.feature-photo:after{content:"";position:absolute;inset:12px;border:1px solid #ffffff8c}.feature-label{position:absolute;bottom:24px;left:-18px;background:var(--gold);color:var(--navy);font:900 24px/.95 'Barlow Condensed',sans-serif;text-transform:uppercase;padding:15px 20px}.feature h2{font-size:clamp(48px,6vw,70px);margin:14px 0 20px}.feature p{font-size:12px;line-height:1.9;color:#c6d0df;margin:0 0 14px}.feature-list{list-style:none;padding:0;margin:22px 0 28px;display:grid;gap:12px}.feature-list li{font-size:11px;color:#f3f5f9}.feature-list li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:10px}
-.planning{background:#e9edf3}.planning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.plan{background:white;padding:25px 26px;border-top:4px solid var(--red)}.plan:nth-child(2){border-color:var(--gold)}.plan:nth-child(3){border-color:var(--blue)}.plan-num{font:900 48px 'Barlow Condensed',sans-serif;color:#dbe1e9}.plan h3{font-size:26px;color:var(--navy);margin:7px 0}.plan p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
-.store{background:white}.store-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.store-art{min-height:300px;background:linear-gradient(135deg,#204878,#0d1c35);color:white;display:grid;place-items:center;text-align:center;padding:28px;position:relative;overflow:hidden}.store-art:before,.store-art:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #ffffff26;border-radius:50%}.store-art:after{width:330px;height:330px}.store-art div{position:relative;z-index:1}.store-art .star{font-size:60px;color:var(--gold)}.store-art h3{font-size:39px;margin:8px 0}.store-art p{font-size:11px;line-height:1.8;color:#d3ddeb}.store-copy h2{font-size:clamp(45px,5.5vw,64px);color:var(--navy);margin:12px 0 18px}.store-copy p{font-size:12px;line-height:1.9;color:var(--muted)}.notice{margin-top:22px;padding:15px 17px;background:#fff7e3;border-left:4px solid var(--gold);font-size:10px;line-height:1.8;color:#625637}
-.footer{background:#0a162b;color:white;padding:42px 0 23px}.footer-top{display:flex;justify-content:space-between;align-items:start;gap:30px;padding-bottom:30px}.footer .wordmark{color:white}.footer-desc{max-width:330px;color:#aeb9ca;font-size:10px;line-height:1.8;margin-top:16px}.footer-links{display:flex;gap:22px;flex-wrap:wrap;font-size:10px;font-weight:800;text-transform:uppercase;color:#e2e7ef}.footer-links a:hover{color:var(--gold)}.footer-bottom{border-top:1px solid #ffffff20;padding-top:18px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:9px;color:#8e9cb2}.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
-@media(max-width:900px){.nav{gap:13px}.nav a:not(.navbtn){display:none}.cards{grid-template-columns:repeat(2,1fr)}.card-img{height:230px}.feature-grid{gap:30px}.section{padding:70px 0}}
-@media(max-width:620px){.wrap{width:calc(100% - 32px)}.headin{min-height:70px}.wordmark{font-size:25px}.menu{display:block}.nav{display:none;position:absolute;top:70px;left:0;right:0;background:white;padding:16px 22px 22px;align-items:stretch;flex-direction:column;gap:0}.nav.open{display:flex}.nav a:not(.navbtn){display:block;padding:13px 0;border-bottom:1px solid var(--line)}.nav .navbtn{text-align:center;margin-top:13px}.hero{min-height:620px}.hero-content{padding:65px 0 76px}h1{font-size:clamp(58px,16vw,88px)}.hero p{font-size:13px}.hero-proof{gap:18px}.hero-proof strong{font-size:19px}.benefit-row{grid-template-columns:1fr}.benefit,.benefit:first-child{padding:14px 0;border-right:0;border-bottom:1px solid #ffffff24}.benefit:last-child{border-bottom:0}.section-head{flex-direction:column;align-items:start;gap:13px}.cards{gap:10px}.card-img{height:155px}.card-body{padding:13px}.card h3{font-size:23px}.card p{font-size:10px;min-height:54px}.card-link{font-size:8px}.feature-grid,.store-grid{grid-template-columns:1fr;gap:35px}.feature-photo{min-height:285px;margin-left:10px}.feature-label{left:-10px}.planning-grid{grid-template-columns:1fr}.store-art{min-height:250px}.footer-top{flex-direction:column}.footer-links{gap:15px}.footer-bottom{flex-direction:column;gap:9px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.reveal{opacity:1;transform:none}}
-</style></head><body>
-<div class="announce">Your celebration starts here <b>★</b> Big selection · Big memories · Celebrate safely</div>
-<header class="head"><div class="wrap headin"><a class="logo" href="#home"><span class="mark">✦</span><span class="wordmark">PYROPEAK<small>FIREWORKS CO.</small></span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav"><a href="#shop">Shop Categories</a><a href="#why">Why PyroPeak</a><a href="#guide">Celebration Guide</a><a href="#store">Find a Store</a><a class="navbtn" href="#shop">Explore Fireworks ↗</a></nav></div></header>
-<main>
-<section class="hero" id="home"><div class="hero-bg"></div><div class="wrap"><div class="hero-content"><div class="eyebrow">Make room for a little wonder</div><h1>GO BIG.<br>LIGHT UP<br><span>THE NIGHT.</span></h1><p>From backyard traditions to the grand finale, find the fireworks that make your celebration one to remember. Your next favorite show starts here.</p><div class="actions"><a class="btn" href="#shop">Explore Fireworks ↗</a><a class="btn white" href="#guide">Plan Your Celebration</a></div><div class="hero-proof"><div><strong>BIG SELECTION</strong><span>Find your kind of fireworks</span></div><div><strong>MADE FOR MOMENTS</strong><span>From first spark to finale</span></div><div><strong>SAFETY FIRST</strong><span>Celebrate responsibly</span></div></div></div></div></section>
-<section class="benefits"><div class="wrap benefit-row"><div class="benefit"><i>✦</i><div><strong>Something for every show</strong><small>Explore crowd favorites and classic effects.</small></div></div><div class="benefit"><i>★</i><div><strong>Build your own finale</strong><small>Mix the moments to make it your own.</small></div></div><div class="benefit"><i>✓</i><div><strong>Safety is part of the show</strong><small>Know the rules before you light the fuse.</small></div></div></div></section>
-<section class="section" id="shop"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Browse the lineup</div><h2>Find your fireworks.</h2></div><p>Whether you want a sky-filling finale or something small for a family gathering, start with the style of show you have in mind.</p></div><div class="cards">
-<a class="card reveal" href="#store"><div class="card-img aerial"><b>Sky high</b></div><div class="card-body"><h3>Aerial Cakes</h3><p>Color, crackle, and big moments in the sky.</p><div class="card-link">Explore in store <span>↗</span></div></div></a>
-<a class="card reveal" href="#store"><div class="card-img assort"><b>Fan favorites</b></div><div class="card-body"><h3>Assortments</h3><p>A little bit of everything for your celebration.</p><div class="card-link">Explore in store <span>↗</span></div></div></a>
-<a class="card reveal" href="#store"><div class="card-img fountain"><b>Ground effects</b></div><div class="card-body"><h3>Fountains</h3><p>Bright, colorful effects closer to the ground.</p><div class="card-link">Explore in store <span>↗</span></div></div></a>
-<a class="card reveal" href="#store"><div class="card-img sparklers"><b>Classic sparks</b></div><div class="card-body"><h3>Sparklers & More</h3><p>Little sparks for photos and treasured traditions.</p><div class="card-link">Explore in store <span>↗</span></div></div></a>
-</div></div></section>
-<section class="section feature" id="why"><div class="wrap feature-grid"><div class="feature-photo reveal"><div class="feature-label">Make it a night<br>to remember</div></div><div class="reveal"><div class="eyebrow" style="color:var(--gold)">It's more than fireworks</div><h2>THE BEST PART<br>IS LOOKING UP.</h2><p>It's the neighbors gathering in the driveway. The kids counting down. The cheers after the final burst. PyroPeak is built around the little traditions that turn an ordinary night into a memory.</p><p>Start with the kind of celebration you want, then explore the options that can bring it to life. Our real product selection and store details can be customized for your business.</p><ul class="feature-list"><li>Browse a range of fireworks styles</li><li>Plan a show around your gathering</li><li>Keep safe handling and local rules in focus</li></ul><a class="btn" href="#guide">Get inspired ↗</a></div></div></section>
-<section class="section planning" id="guide"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">A little planning goes a long way</div><h2>Make your night count.</h2></div><p>Good celebrations aren't just about the grand finale. A little planning makes the whole evening feel special.</p></div><div class="planning-grid"><article class="plan reveal"><div class="plan-num">01</div><h3>Set the scene</h3><p>Pick a clear, open viewing area and make sure everyone has a safe place to watch from.</p></article><article class="plan reveal"><div class="plan-num">02</div><h3>Build the lineup</h3><p>Think about the feel of your celebration, from the first effect to the final moment.</p></article><article class="plan reveal"><div class="plan-num">03</div><h3>Celebrate safely</h3><p>Check local rules, follow every product label, keep water nearby, and never let children handle fireworks.</p></article></div></div></section>
-<section class="section store" id="store"><div class="wrap store-grid"><div class="store-art reveal"><div><div class="star">✦</div><h3>Your next big night<br>starts here.</h3><p>Store address, hours, phone, and directions<br>can be added when this concept is customized.</p></div></div><div class="store-copy reveal"><div class="eyebrow">Come see what's possible</div><h2>Find your local stand.</h2><p>Ready to plan your celebration? Visit your local PyroPeak location to browse available products and find the right fit for your night.</p><p>This is a concept website. Replace this section with the actual store location, seasonal hours, phone number, map, and directions before publishing for a real retailer.</p><a class="btn" href="mailto:hello@pyropeak.example">Contact PyroPeak ↗</a><div class="notice"><strong>Important:</strong> Fireworks laws differ across Wisconsin municipalities. Some items may require a permit, and possession or sale does not automatically mean use is legal in every location. Check current local rules before purchasing or using fireworks.</div></div></div></section>
-</main><footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="logo" href="#home"><span class="mark">✦</span><span class="wordmark">PYROPEAK<small>FIREWORKS CO.</small></span></a><p class="footer-desc">Big moments. Bright skies. A concept website for a fireworks retailer, designed to help customers explore categories and plan a memorable celebration.</p></div><nav class="footer-links"><a href="#shop">Shop Categories</a><a href="#why">Our Story</a><a href="#guide">Celebration Guide</a><a href="#store">Find a Store</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> PyroPeak Fireworks Co. · Concept website</span><span>Follow local laws. Read labels. Celebrate responsibly.</span></div></div></footer>
-<script>const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));document.getElementById('year').textContent=new Date().getFullYear();const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <meta name="description" content="PyroPeak Fireworks — find your kind of night, explore fireworks styles, and plan a celebration worth looking up for.">
+  <title>PyroPeak Fireworks — Make the Night Go Off</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:#101012; --panel:#19191e; --panel-2:#222228; --paper:#f4f2ec;
+      --muted:#aaaab5; --line:rgba(255,255,255,.13); --lime:#ddff57;
+      --coral:#ff674e; --violet:#ae95ff; --max:1240px;
+      --display:'Bebas Neue',Impact,sans-serif; --body:'Space Grotesk',Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--body);-webkit-font-smoothing:antialiased}
+    body.menu-open{overflow:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    button,a{-webkit-tap-highlight-color:transparent}
+    ::selection{background:var(--lime);color:var(--ink)}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+    .announcement{background:var(--lime);color:var(--ink);min-height:34px;display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 18px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;text-align:center}
+    .announcement .spark{font-size:13px}
+    .header{position:sticky;top:0;z-index:30;background:rgba(16,16,18,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-shell{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .brand{display:inline-flex;align-items:center;gap:12px;flex-shrink:0}
+    .brand-symbol{width:39px;height:39px;background:var(--lime);color:var(--ink);display:grid;place-items:center;border-radius:12px 4px 12px 4px;transform:rotate(-6deg);font-size:27px;line-height:1}
+    .brand-copy{font-weight:700;font-size:20px;line-height:.9;letter-spacing:-.075em}
+    .brand-copy span{color:var(--lime)}
+    .brand-copy small{display:block;color:#a6a6b0;font-size:8px;letter-spacing:.2em;text-transform:uppercase;margin-top:7px;font-weight:700}
+    .nav{display:flex;align-items:center;gap:28px}
+    .nav a:not(.nav-cta){font-size:11px;color:#d5d4dc;font-weight:600;transition:color .2s}
+    .nav a:not(.nav-cta):hover{color:var(--lime)}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--lime);color:var(--ink);padding:15px 19px;border:1px solid var(--lime);font-size:10px;line-height:1;font-weight:700;letter-spacing:.09em;text-transform:uppercase;transition:transform .2s,background .2s,color .2s}
+    .nav-cta{padding:14px 16px}
+    .nav-cta:hover,.button:hover{transform:translateY(-2px);background:#ecff9e}
+    .button.dark{background:transparent;border-color:rgba(255,255,255,.35);color:var(--paper)}
+    .button.dark:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+    .button.coral{background:var(--coral);border-color:var(--coral);color:#170e0c}
+    .button.coral:hover{background:#ff8975}
+    .button .arrow{font-size:16px;line-height:.6}
+    .menu-toggle{display:none;background:transparent;color:var(--paper);border:1px solid var(--line);width:44px;height:44px;font-size:23px;cursor:pointer}
+    .hero{position:relative;overflow:hidden;padding:66px 0 56px;background:
+      radial-gradient(ellipse at 23% 10%,rgba(174,149,255,.12),transparent 37%),
+      radial-gradient(ellipse at 80% 85%,rgba(221,255,87,.07),transparent 30%),var(--ink)}
+    .hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.15;background-image:radial-gradient(rgba(255,255,255,.35) .65px,transparent .65px);background-size:18px 18px;mask-image:linear-gradient(90deg,#000,transparent 65%)}
+    .hero-grid{position:relative;display:grid;grid-template-columns:.93fr 1.07fr;gap:40px;align-items:center}
+    .hero-copy{padding:26px 0 34px;position:relative;z-index:2}
+    .kicker{display:inline-flex;align-items:center;gap:9px;color:var(--lime);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.17em}
+    .kicker:before{content:"";display:block;width:21px;height:2px;background:currentColor}
+    .hero h1{font:400 clamp(78px,10.2vw,145px)/.78 var(--display);letter-spacing:-.025em;margin:28px 0 27px;text-transform:uppercase}
+    .hero h1 .line-2{display:block;color:var(--lime);padding-top:9px}
+    .hero h1 .outline{-webkit-text-stroke:1.5px var(--paper);color:transparent;display:block;padding-top:9px}
+    .hero-lede{max-width:435px;color:#c2c1ca;font-size:14px;line-height:1.85;margin:0 0 27px}
+    .hero-actions{display:flex;gap:11px;flex-wrap:wrap}
+    .hero-notes{display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px;margin-top:35px}
+    .hero-note{display:flex;align-items:center;gap:9px;color:#c8c7cf;font-size:10px}
+    .note-dot{width:7px;height:7px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 4px rgba(255,103,78,.12)}
+    .note-dot.violet{background:var(--violet);box-shadow:0 0 0 4px rgba(174,149,255,.13)}
+    .note-dot.lime{background:var(--lime);box-shadow:0 0 0 4px rgba(221,255,87,.13)}
+    .hero-art{min-height:555px;position:relative;isolation:isolate}
+    .hero-photo{position:absolute;inset:0 0 22px 27px;background:#24212e url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&w=1500&q=90') center/cover no-repeat;border-radius:180px 180px 8px 8px;overflow:hidden}
+    .hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,16,18,.05),rgba(16,16,18,.05) 42%,rgba(16,16,18,.75)),linear-gradient(90deg,rgba(16,16,18,.1),transparent)}
+    .hero-photo:after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.24);border-radius:168px 168px 2px 2px}
+    .hero-stamp{position:absolute;z-index:3;left:0;top:80px;width:117px;height:117px;border-radius:50%;background:var(--coral);color:var(--ink);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;transform:rotate(-10deg);box-shadow:0 15px 50px #0005}
+    .hero-stamp strong{font:400 34px/.8 var(--display);letter-spacing:.01em}
+    .hero-stamp span{max-width:75px;font-size:8px;line-height:1.35;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
+    .photo-caption{position:absolute;z-index:3;right:18px;bottom:0;width:230px;padding:19px 20px;background:var(--lime);color:var(--ink)}
+    .photo-caption small{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+    .photo-caption strong{display:block;font:400 28px/.95 var(--display);margin-top:9px}
+    .hero-side-label{position:absolute;right:-22px;top:45%;writing-mode:vertical-rl;transform:rotate(180deg);font-size:8px;letter-spacing:.24em;color:#777580;text-transform:uppercase}
+    .side-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:#151518}
+    .ticker{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:17px 0;white-space:nowrap}
+    .ticker span{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#d6d4dc}
+    .ticker b{color:var(--lime);font-size:16px}
+    .section{padding:110px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:37px}
+    .section-head h2,.big-copy h2,.safety-copy h2,.visit-copy h2{font:400 clamp(50px,7vw,86px)/.86 var(--display);letter-spacing:-.012em;text-transform:uppercase;margin:17px 0 0}
+    .section-head h2 span,.big-copy h2 span,.safety-copy h2 span,.visit-copy h2 span{color:var(--lime)}
+    .section-head p{max-width:365px;color:var(--muted);font-size:12px;line-height:1.9;margin:0 0 3px}
+    .category-section{background:var(--paper);color:var(--ink)}
+    .category-section .kicker{color:#5a6333}
+    .category-section .section-head p{color:#66656b}
+    .category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+    .category-card{position:relative;min-height:355px;isolation:isolate;overflow:hidden;background:#2b2932;color:white;display:flex;flex-direction:column;justify-content:space-between;padding:19px;transition:transform .25s}
+    .category-card:before{content:"";position:absolute;inset:0;z-index:-2;background-position:center;background-size:cover;transition:transform .55s}
+    .category-card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,7,9,.02) 15%,rgba(7,7,9,.2) 42%,rgba(7,7,9,.94) 100%)}
+    .category-card:hover{transform:translateY(-5px)}
+    .category-card:hover:before{transform:scale(1.07)}
+    .category-card:nth-child(1):before{background-image:url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&w=800&q=85')}
+    .category-card:nth-child(2):before{background-image:url('https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?auto=format&fit=crop&w=800&q=85')}
+    .category-card:nth-child(3):before{background-image:url('https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?auto=format&fit=crop&w=800&q=85')}
+    .category-card:nth-child(4):before{background-image:url('https://images.unsplash.com/photo-1533236897111-3e94666b2edf?auto=format&fit=crop&w=800&q=85')}
+    .category-top{display:flex;justify-content:space-between;align-items:center}
+    .category-num{font-size:10px;letter-spacing:.1em;color:#ffffffcf}
+    .category-icon{width:35px;height:35px;border:1px solid #ffffff8c;border-radius:50%;display:grid;place-items:center;font-size:16px;transition:background .2s,color .2s,border-color .2s}
+    .category-card:hover .category-icon{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+    .category-info .pill{display:inline-block;font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--lime);color:var(--ink);padding:7px 9px;margin-bottom:12px}
+    .category-info h3{font:400 33px/.9 var(--display);text-transform:uppercase;margin:0 0 9px}
+    .category-info p{font-size:10px;line-height:1.65;color:#e0dfe4;margin:0;max-width:210px}
+    .category-foot{display:flex;align-items:center;justify-content:space-between;margin-top:19px;border-top:1px solid #ffffff44;padding-top:12px;font-size:9px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+    .category-foot span:last-child{font-size:16px;color:var(--lime)}
+    .vibe-section{background:var(--ink);position:relative;overflow:hidden}
+    .vibe-section:after{content:"PP";position:absolute;right:-18px;bottom:-140px;font:400 440px/.8 var(--display);color:rgba(255,255,255,.025);pointer-events:none}
+    .vibe-inner{position:relative;z-index:1}
+    .vibe-head{max-width:750px;margin-bottom:38px}
+    .vibe-head h2{font:400 clamp(58px,8.5vw,100px)/.83 var(--display);margin:18px 0 18px;text-transform:uppercase}
+    .vibe-head h2 span{color:var(--violet)}
+    .vibe-head p{max-width:485px;color:var(--muted);font-size:12px;line-height:1.85;margin:0}
+    .vibe-options{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+    .vibe-option{min-height:210px;text-align:left;position:relative;background:var(--panel);border:1px solid var(--line);padding:23px;color:var(--paper);cursor:pointer;transition:background .2s,border .2s,transform .2s}
+    .vibe-option:hover{transform:translateY(-3px);border-color:#ffffff55}
+    .vibe-option[aria-pressed="true"]{background:#252a18;border-color:var(--lime);box-shadow:inset 0 0 0 1px var(--lime)}
+    .vibe-option .vibe-index{font-size:9px;letter-spacing:.14em;color:var(--lime);font-weight:700}
+    .vibe-option h3{font:400 37px/.88 var(--display);text-transform:uppercase;margin:29px 0 12px}
+    .vibe-option p{font-size:11px;line-height:1.7;color:#bcbac5;margin:0;max-width:290px}
+    .vibe-option .pick{position:absolute;right:19px;top:18px;width:25px;height:25px;border:1px solid #ffffff4f;border-radius:50%;display:grid;place-items:center;font-size:13px}
+    .vibe-option[aria-pressed="true"] .pick{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+    .vibe-result{margin-top:14px;display:grid;grid-template-columns:1.3fr .7fr;background:var(--lime);color:var(--ink);padding:25px 27px;gap:25px;align-items:center}
+    .vibe-result .result-label{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+    .vibe-result h3{font:400 34px/.93 var(--display);margin:8px 0}
+    .vibe-result p{font-size:11px;line-height:1.7;margin:0;max-width:590px}
+    .result-action{display:flex;align-items:center;justify-content:flex-end}
+    .button.ink{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+    .button.ink:hover{background:#33333a}
+    .story-section{padding:0;background:var(--violet);color:var(--ink);overflow:hidden}
+    .story-grid{display:grid;grid-template-columns:1fr 1fr;min-height:540px}
+    .story-art{position:relative;min-height:500px;background:#1b1922 url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1500&q=85') center/cover no-repeat}
+    .story-art:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(16,16,18,.55),transparent 65%)}
+    .story-art:after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.5)}
+    .story-vertical{position:absolute;left:31px;bottom:30px;color:white;font:400 29px/.87 var(--display);text-transform:uppercase;z-index:1}
+    .story-vertical span{color:var(--lime)}
+    .big-copy{padding:75px clamp(30px,6vw,82px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+    .big-copy .kicker{color:#342b57}
+    .big-copy h2{font-size:clamp(54px,6.7vw,84px);margin-bottom:24px}
+    .big-copy h2 span{color:#fff}
+    .big-copy p{font-size:12px;line-height:1.9;color:#26223b;max-width:430px;margin:0 0 18px}
+    .big-copy .button{margin-top:12px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:31px;width:100%;border-top:1px solid rgba(16,16,18,.25)}
+    .step{padding:18px 12px 0 0}
+    .step b{font:400 28px/.9 var(--display)}
+    .step small{display:block;margin-top:8px;font-size:9px;line-height:1.55;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#403952}
+    .safety-section{background:#f4f2ec;color:var(--ink)}
+    .safety-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+    .safety-copy .kicker{color:#747a37}
+    .safety-copy h2{font-size:clamp(58px,7vw,83px);margin-bottom:20px}
+    .safety-copy p{font-size:12px;line-height:1.9;color:#66656c;margin:0;max-width:390px}
+    .safety-link{display:inline-flex;gap:10px;align-items:center;margin-top:24px;padding-bottom:5px;border-bottom:1px solid #222;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .safety-list{border-top:1px solid #d6d3ca}
+    .safety-item{display:grid;grid-template-columns:47px 1fr;gap:17px;padding:20px 0;border-bottom:1px solid #d6d3ca}
+    .safety-number{width:36px;height:36px;display:grid;place-items:center;background:var(--lime);font-size:10px;font-weight:700}
+    .safety-item h3{font:700 13px/1.3 var(--body);text-transform:none;margin:2px 0 6px}
+    .safety-item p{font-size:11px;line-height:1.8;color:#68676d;margin:0}
+    .visit-section{background:var(--panel);position:relative;overflow:hidden}
+    .visit-section:before{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff12;border-radius:50%;right:-140px;top:-220px;box-shadow:0 0 0 50px #ffffff05,0 0 0 100px #ffffff03}
+    .visit-grid{display:grid;grid-template-columns:1fr .9fr;gap:62px;align-items:center;position:relative}
+    .visit-copy .kicker{color:var(--coral)}
+    .visit-copy h2{font-size:clamp(58px,7vw,86px);margin-bottom:22px}
+    .visit-copy>p{font-size:12px;line-height:1.9;color:#bcbac5;max-width:480px;margin:0 0 25px}
+    .visit-card{padding:26px;background:var(--paper);color:var(--ink);position:relative}
+    .visit-card-top{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #d8d5ce;padding-bottom:20px}
+    .visit-card-top strong{font:400 32px/.9 var(--display)}
+    .visit-card-top span{font-size:8px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#5e5c63}
+    .visit-details{display:grid;gap:17px;padding:22px 0}
+    .visit-detail{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start}
+    .visit-icon{width:30px;height:30px;background:var(--lime);display:grid;place-items:center;font-size:14px}
+    .visit-detail strong{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+    .visit-detail p{font-size:10px;line-height:1.7;color:#68676d;margin:5px 0 0}
+    .visit-card .button{width:100%}
+    .visit-note{color:#aeadb7;font-size:9px;line-height:1.7;margin-top:14px}
+    .faq-section{background:var(--ink)}
+    .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+    .faq-heading .kicker{color:var(--violet)}
+    .faq-heading h2{font:400 clamp(58px,7vw,82px)/.86 var(--display);margin:18px 0;text-transform:uppercase}
+    .faq-heading p{font-size:12px;line-height:1.9;color:var(--muted);max-width:330px}
+    .faq-list{border-top:1px solid var(--line)}
+    .faq-item{border-bottom:1px solid var(--line)}
+    .faq-question{width:100%;border:0;background:transparent;color:var(--paper);display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 0;text-align:left;font-weight:600;font-size:12px;cursor:pointer}
+    .faq-question span:last-child{width:28px;height:28px;border:1px solid #ffffff40;display:grid;place-items:center;color:var(--lime);font-size:18px;flex-shrink:0;transition:transform .2s}
+    .faq-question[aria-expanded="true"] span:last-child{transform:rotate(45deg);background:var(--lime);color:var(--ink);border-color:var(--lime)}
+    .faq-answer{display:none;color:#b8b6c1;font-size:11px;line-height:1.9;padding:0 44px 22px 0;max-width:590px}
+    .faq-answer.open{display:block}
+    .footer{background:#0a0a0c;border-top:1px solid var(--line);padding:45px 0 22px}
+    .footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:35px;padding-bottom:39px}
+    .footer-brand p{max-width:350px;color:#85848f;font-size:10px;line-height:1.8;margin:16px 0 0}
+    .footer-links{display:grid;grid-template-columns:repeat(2,auto);gap:14px 35px}
+    .footer-links a{font-size:10px;font-weight:600;color:#c5c4cc;transition:color .2s}
+    .footer-links a:hover{color:var(--lime)}
+    .footer-bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#777681;font-size:9px}
+    .footer-bottom .legal{color:#aaa9b2}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    @media(max-width:1000px){
+      .nav{gap:18px}.nav a:not(.nav-cta){font-size:10px}
+      .hero-grid{gap:22px}.hero h1{font-size:clamp(78px,11vw,120px)}
+      .hero-art{min-height:495px}.category-grid{grid-template-columns:repeat(2,1fr)}
+      .category-card{min-height:370px}.story-grid{grid-template-columns:.9fr 1.1fr}
+      .big-copy{padding:60px 38px}.safety-grid,.faq-grid{gap:42px}
+    }
+    @media(max-width:720px){
+      .wrap{width:calc(100% - 34px)}
+      .announcement{font-size:8px;letter-spacing:.1em;gap:8px}
+      .nav-shell{min-height:72px}.brand-symbol{width:35px;height:35px}.brand-copy{font-size:18px}
+      .menu-toggle{display:block;position:relative;z-index:35}
+      .nav{display:none;position:fixed;inset:0;background:rgba(16,16,18,.98);padding:100px 28px 35px;align-items:stretch;flex-direction:column;gap:0;z-index:32}
+      .nav.open{display:flex}
+      .nav a:not(.nav-cta){font-size:19px;padding:19px 0;border-bottom:1px solid var(--line)}
+      .nav-cta{margin-top:22px;min-height:52px}
+      .hero{padding:37px 0 40px}
+      .hero-grid{grid-template-columns:1fr;gap:16px}
+      .hero-copy{padding:22px 0 4px}
+      .hero h1{font-size:clamp(78px,19vw,132px);margin:25px 0}
+      .hero-lede{font-size:13px;max-width:460px}
+      .hero-notes{margin-top:26px;gap:12px 17px}
+      .hero-art{min-height:440px;margin:0 8px 8px 0}
+      .hero-photo{inset:0 0 19px 18px;border-radius:130px 130px 7px 7px}
+      .hero-photo:after{inset:10px;border-radius:120px 120px 2px 2px}
+      .hero-stamp{width:94px;height:94px;left:-3px;top:47px}.hero-stamp strong{font-size:29px}
+      .hero-stamp span{font-size:7px;margin-top:6px}.photo-caption{right:0;width:190px;padding:15px}
+      .photo-caption strong{font-size:25px}.hero-side-label{right:-17px;font-size:7px}
+      .ticker{gap:20px;justify-content:flex-start;overflow:hidden}.ticker span{font-size:9px}
+      .section{padding:78px 0}
+      .section-head{display:block;margin-bottom:27px}
+      .section-head h2,.big-copy h2,.safety-copy h2,.visit-copy h2{font-size:clamp(55px,13vw,76px)}
+      .section-head p{margin-top:18px}
+      .category-grid{gap:9px}.category-card{min-height:300px;padding:13px}
+      .category-info h3{font-size:28px}.category-info p{font-size:9px}
+      .category-info .pill{font-size:7px;padding:6px 7px}
+      .category-foot{font-size:8px}
+      .vibe-head h2{font-size:clamp(58px,15vw,83px)}
+      .vibe-options{grid-template-columns:1fr;gap:9px}
+      .vibe-option{min-height:165px;padding:20px}
+      .vibe-option h3{margin-top:22px;font-size:32px}
+      .vibe-result{grid-template-columns:1fr;gap:17px;padding:22px}
+      .result-action{justify-content:flex-start}
+      .story-grid{grid-template-columns:1fr}
+      .story-art{min-height:350px}
+      .big-copy{padding:54px 25px 59px}
+      .big-copy p{font-size:11px}
+      .steps{margin-top:23px}.step{padding-right:8px}.step b{font-size:24px}.step small{font-size:8px}
+      .safety-grid{grid-template-columns:1fr;gap:33px}
+      .safety-copy h2{font-size:clamp(60px,14vw,78px)}
+      .visit-grid{grid-template-columns:1fr;gap:34px}
+      .visit-copy h2{font-size:clamp(59px,14vw,78px)}
+      .visit-card{padding:20px}
+      .faq-grid{grid-template-columns:1fr;gap:25px}
+      .faq-heading h2{font-size:clamp(59px,14vw,78px)}
+      .footer-top{flex-direction:column}.footer-links{width:100%;justify-content:space-between}
+      .footer-bottom{align-items:flex-start;flex-direction:column;gap:9px}
+    }
+    @media(max-width:390px){
+      .category-card{min-height:275px}.category-info h3{font-size:25px}
+      .hero h1{font-size:76px}.hero-art{min-height:380px}
+      .hero-notes{display:grid;grid-template-columns:1fr 1fr}
+      .footer-links{gap:13px 20px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}
+      .reveal{opacity:1;transform:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement"><span class="spark">✳</span> Good nights deserve a big finish <span class="spark">✳</span> Make it a moment</div>
+  <header class="header">
+    <div class="wrap nav-shell">
+      <a class="brand" href="#home" aria-label="PyroPeak Fireworks home">
+        <span class="brand-symbol" aria-hidden="true">✳</span>
+        <span class="brand-copy">PYRO<span>PEAK</span><small>Fireworks for the moment</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#lineup">The lineup</a>
+        <a href="#vibe">Find your vibe</a>
+        <a href="#safety">Safety first</a>
+        <a href="#visit">Find a store</a>
+        <a class="nav-cta" href="#lineup">Explore fireworks <span class="arrow">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">For nights worth remembering</div>
+          <h1>BIG NIGHT.<span class="line-2">BIGGER</span><span class="outline">SKY.</span></h1>
+          <p class="hero-lede">The driveway countdown. The first big burst. That one finale everyone talks about the next day. Find the kind of fireworks that make a good night unforgettable.</p>
+          <div class="hero-actions">
+            <a class="button" href="#lineup">Explore the lineup <span class="arrow">↗</span></a>
+            <a class="button dark" href="#vibe">Build your kind of show</a>
+          </div>
+          <div class="hero-notes">
+            <div class="hero-note"><span class="note-dot lime"></span> Big-sky energy</div>
+            <div class="hero-note"><span class="note-dot violet"></span> Every kind of gathering</div>
+            <div class="hero-note"><span class="note-dot"></span> Safety stays in the picture</div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Fireworks illuminating the night sky">
+          <div class="hero-photo"></div>
+          <div class="hero-stamp"><strong>LOOK UP.</strong><span>The good part is just getting started</span></div>
+          <div class="photo-caption"><small>PyroPeak presents</small><strong>YOUR NIGHT.<br>YOUR KIND OF MAGIC.</strong></div>
+          <div class="hero-side-label">The moment starts here — PyroPeak</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="side-strip" aria-label="Celebration styles">
+      <div class="wrap ticker">
+        <span>For the backyard people</span><b>✳</b><span>For the whole-block crew</span><b>✳</b><span>For the grand-finale crowd</span><b>✳</b><span>For the look-up-and-smile moments</span>
+      </div>
+    </div>
+
+    <section class="section category-section" id="lineup">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><div class="kicker">Start with the feeling</div><h2>Pick your kind<br>of <span style="color:#8e9b36">night.</span></h2></div>
+          <p>Some celebrations call for a little sparkle. Others deserve a sky full of color. Explore the big categories and find a starting point for your show.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card reveal" href="#vibe" data-vibe="finale">
+            <div class="category-top"><span class="category-num">01 / UP IN THE AIR</span><span class="category-icon">↗</span></div>
+            <div class="category-info"><span class="pill">Big sky energy</span><h3>Aerial<br>effects</h3><p>Big color, dramatic breaks, and a reason to look up.</p><div class="category-foot"><span>For the big finish</span><span>↗</span></div></div>
+          </a>
+          <a class="category-card reveal" href="#vibe" data-vibe="backyard">
+            <div class="category-top"><span class="category-num">02 / THE MIX</span><span class="category-icon">↗</span></div>
+            <div class="category-info"><span class="pill">A little of everything</span><h3>Assort-<br>ments</h3><p>A mix of effects to keep the whole celebration moving.</p><div class="category-foot"><span>For a varied show</span><span>↗</span></div></div>
+          </a>
+          <a class="category-card reveal" href="#vibe" data-vibe="easy">
+            <div class="category-top"><span class="category-num">03 / GROUND LEVEL</span><span class="category-icon">↗</span></div>
+            <div class="category-info"><span class="pill">Color up close</span><h3>Fountains</h3><p>Ground-based effects that bring the color closer.</p><div class="category-foot"><span>Explore the effects</span><span>↗</span></div></div>
+          </a>
+          <a class="category-card reveal" href="#vibe" data-vibe="easy">
+            <div class="category-top"><span class="category-num">04 / CLASSIC SPARK</span><span class="category-icon">↗</span></div>
+            <div class="category-info"><span class="pill">Little moments</span><h3>Sparklers<br>& more</h3><p>Classic sparks and small touches for celebration traditions.</p><div class="category-foot"><span>Find your favorites</span><span>↗</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vibe-section" id="vibe">
+      <div class="wrap vibe-inner">
+        <div class="vibe-head reveal">
+          <div class="kicker">A show that feels like you</div>
+          <h2>What's your<br><span>kind of night?</span></h2>
+          <p>Start with the people you're celebrating with. Pick a vibe below for a few ideas to guide your browsing. Product selection varies by store and season.</p>
+        </div>
+        <div class="vibe-options reveal" role="group" aria-label="Choose your celebration style">
+          <button class="vibe-option" type="button" data-choice="easy" aria-pressed="false">
+            <span class="vibe-index">01 / KEEP IT EASY</span><span class="pick">+</span>
+            <h3>Small crowd.<br>Big smiles.</h3><p>For a relaxed gathering, a little color, and room for everyone to enjoy the moment.</p>
+          </button>
+          <button class="vibe-option" type="button" data-choice="backyard" aria-pressed="true">
+            <span class="vibe-index">02 / BACKYARD CLASSIC</span><span class="pick">✓</span>
+            <h3>Bring the<br>whole crew.</h3><p>Mix up the pace with a variety of effects and give your get-together a memorable rhythm.</p>
+          </button>
+          <button class="vibe-option" type="button" data-choice="finale" aria-pressed="false">
+            <span class="vibe-index">03 / FULL FINALE</span><span class="pick">+</span>
+            <h3>Eyes on<br>the sky.</h3><p>You're here for the bigger picture: bold aerial effects and a finish that gets everyone cheering.</p>
+          </button>
+        </div>
+        <div class="vibe-result reveal" aria-live="polite">
+          <div><span class="result-label" id="result-label">Your vibe / Backyard classic</span><h3 id="result-title">Build the night in layers.</h3><p id="result-copy">Explore assortments and a mix of effects, then check with your local retailer about what's available and what fits your setting.</p></div>
+          <div class="result-action"><a class="button ink" id="result-link" href="#lineup">Browse the lineup <span class="arrow">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-grid">
+        <div class="story-art" role="img" aria-label="A crowd gathered at an outdoor celebration"><div class="story-vertical">Make room for<br><span>the good stuff.</span></div></div>
+        <div class="big-copy">
+          <div class="kicker">It's never just the fireworks</div>
+          <h2>IT'S THE<br><span>WHOLE</span><br>NIGHT.</h2>
+          <p>It's the chairs dragged into the driveway. The playlist everybody knows. The kids counting down and the friends who stay long after the last spark fades. That's the feeling we're chasing.</p>
+          <p>PyroPeak is here to help you find a starting point for your celebration, with styles to explore and practical reminders for making the night a good one from beginning to end.</p>
+          <a class="button coral" href="#safety">Plan it right <span class="arrow">↗</span></a>
+          <div class="steps">
+            <div class="step"><b>01</b><small>Pick your<br>kind of night</small></div>
+            <div class="step"><b>02</b><small>Find your<br>effects</small></div>
+            <div class="step"><b>03</b><small>Make safety<br>part of the plan</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section safety-section" id="safety">
+      <div class="wrap safety-grid">
+        <div class="safety-copy reveal">
+          <div class="kicker">The best nights end well</div>
+          <h2>KEEP IT<br><span>BRIGHT.</span><br>KEEP IT<br>SAFE.</h2>
+          <p>A little preparation makes a difference. Read each product's instructions, set up a clear viewing area, and check the rules where you live before planning your display.</p>
+          <a class="safety-link" href="https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Fireworks" target="_blank" rel="noopener noreferrer">Read official fireworks safety guidance <span>↗</span></a>
+        </div>
+        <div class="safety-list reveal">
+          <article class="safety-item"><div class="safety-number">01</div><div><h3>Check the rules first</h3><p>Fireworks rules vary by location. Confirm current local and state requirements before buying, possessing, or using fireworks.</p></div></article>
+          <article class="safety-item"><div class="safety-number">02</div><div><h3>Choose a clear, open area</h3><p>Keep spectators at a safe distance and stay clear of buildings, vehicles, dry vegetation, and overhead hazards.</p></div></article>
+          <article class="safety-item"><div class="safety-number">03</div><div><h3>Follow the label every time</h3><p>Use products only as directed. Never relight a dud, never hold fireworks that are not designed to be held, and keep water nearby.</p></div></article>
+          <article class="safety-item"><div class="safety-number">04</div><div><h3>Keep kids and pets protected</h3><p>Adults should handle fireworks. Keep children and pets away from the launch area and provide a comfortable place to watch from a distance.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visit-section" id="visit">
+      <div class="wrap visit-grid">
+        <div class="visit-copy reveal">
+          <div class="kicker">Ready to make a plan?</div>
+          <h2>YOUR NEXT<br>STOP: <span>PYROPEAK.</span></h2>
+          <p>Browse the styles, make a short list, then check with your local fireworks retailer for current inventory, seasonal hours, and what is permitted in your area.</p>
+          <a class="button" href="#lineup">Explore fireworks <span class="arrow">↗</span></a>
+        </div>
+        <div class="reveal">
+          <div class="visit-card">
+            <div class="visit-card-top"><strong>Make the trip<br>worth it.</strong><span>Before you go</span></div>
+            <div class="visit-details">
+              <div class="visit-detail"><span class="visit-icon">⌖</span><div><strong>Find your local store</strong><p>Confirm the real store address and directions before heading out.</p></div></div>
+              <div class="visit-detail"><span class="visit-icon">◷</span><div><strong>Check seasonal hours</strong><p>Opening times and seasonal availability may change around major holidays.</p></div></div>
+              <div class="visit-detail"><span class="visit-icon">✳</span><div><strong>Ask about availability</strong><p>Product selection can vary by location and may change through the season.</p></div></div>
+            </div>
+            <a class="button ink" href="#lineup">Build your shortlist <span class="arrow">↗</span></a>
+          </div>
+          <p class="visit-note">Store address, phone, hours, and directions should be connected to the actual retailer before this site is published.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-heading reveal"><div class="kicker">A few quick answers</div><h2>GOOD TO<br><span style="color:var(--violet)">KNOW.</span></h2><p>Get the basics sorted before the countdown starts.</p></div>
+        <div class="faq-list reveal">
+          <div class="faq-item"><button class="faq-question" aria-expanded="true" type="button"><span>Are fireworks legal everywhere?</span><span>+</span></button><div class="faq-answer open">No. Rules can differ by state, county, and municipality, and some fireworks may require a permit. Check the current rules for the exact place where you plan to use them.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" type="button"><span>How do I choose fireworks for my gathering?</span><span>+</span></button><div class="faq-answer">Start with the location, your audience, and how much room you have. Read product instructions and ask the retailer about suitable options. Never use a product in a setting that conflicts with its label or local rules.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" type="button"><span>Can I find every product at every store?</span><span>+</span></button><div class="faq-answer">Not necessarily. Inventory and seasonal availability can vary by location. Contact the store ahead of time to confirm the items you're interested in.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" type="button"><span>What's the most important safety step?</span><span>+</span></button><div class="faq-answer">Read and follow every product's instructions, use fireworks only where allowed, keep spectators well away, and never relight a firework that fails to function. Refer to official safety guidance for more information.</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#home"><span class="brand-symbol" aria-hidden="true">✳</span><span class="brand-copy">PYRO<span>PEAK</span><small>Fireworks for the moment</small></span></a>
+          <p>For the countdowns, the color, and the nights everybody remembers. Plan with care, follow the rules, and leave room for wonder.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation"><a href="#lineup">The lineup</a><a href="#vibe">Find your vibe</a><a href="#story">Our approach</a><a href="#safety">Safety first</a><a href="#visit">Find a store</a><a href="#faq">Quick answers</a></nav>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> PyroPeak Fireworks</span><span class="legal">Celebrate responsibly. Follow product labels and local laws.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    function closeMenu() {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation');
+      menuToggle.textContent = '☰';
+      document.body.classList.remove('menu-open');
+    }
+    menuToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      menuToggle.textContent = isOpen ? '×' : '☰';
+      document.body.classList.toggle('menu-open', isOpen);
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const vibeContent = {
+      easy: {
+        label: 'Your vibe / Keep it easy',
+        title: 'Small crowd. Thoughtful mix.',
+        copy: 'Look at ground-based effects and classic small-format options, then check the label, your space, and local rules before choosing anything.',
+        target: '#lineup'
+      },
+      backyard: {
+        label: 'Your vibe / Backyard classic',
+        title: 'Build the night in layers.',
+        copy: 'Explore assortments and a mix of effects, then check with your local retailer about what is available and what fits your setting.',
+        target: '#lineup'
+      },
+      finale: {
+        label: 'Your vibe / Full finale',
+        title: 'Make room for the big view.',
+        copy: 'Explore aerial-effect categories and ask your retailer about safe viewing distances, suitable space, and local restrictions before planning a display.',
+        target: '#lineup'
+      }
+    };
+    const choiceButtons = [...document.querySelectorAll('.vibe-option')];
+    function chooseVibe(choice) {
+      const data = vibeContent[choice] || vibeContent.backyard;
+      choiceButtons.forEach(button => {
+        const selected = button.dataset.choice === choice;
+        button.setAttribute('aria-pressed', String(selected));
+        button.querySelector('.pick').textContent = selected ? '✓' : '+';
+      });
+      document.getElementById('result-label').textContent = data.label;
+      document.getElementById('result-title').textContent = data.title;
+      document.getElementById('result-copy').textContent = data.copy;
+      document.getElementById('result-link').setAttribute('href', data.target);
+    }
+    choiceButtons.forEach(button => button.addEventListener('click', () => chooseVibe(button.dataset.choice)));
+    document.querySelectorAll('.category-card[data-vibe]').forEach(card => card.addEventListener('click', () => chooseVibe(card.dataset.vibe)));
+
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        button.nextElementSibling.classList.toggle('open', !expanded);
+      });
+    });
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      }), {threshold: 0.12});
+      document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    } else {
+      document.querySelectorAll('.reveal').forEach(element => element.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
