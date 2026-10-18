@@ -155,6 +155,83 @@ img{max-width:100%;display:block}
 .footer-bottom{border-top:1px solid #ffffff26;padding:16px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#aebbd0;font-size:9px;line-height:1.7}
 .footer-bottom strong{color:var(--gold)}
 .notice{background:#fff0b6;color:#4d401d;padding:11px 13px;border-left:4px solid #e1ad19;font-size:10px;line-height:1.7;margin-top:16px}
+
+/* Modern refresh: keep the classic fireworks-store personality, with cleaner spacing,
+   sharper hierarchy, quieter shadows, and a more contemporary finish. */
+:root{--max:1200px;--line:#ded6c7}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.wrap{width:min(var(--max),calc(100% - 42px))}
+.topline{letter-spacing:.075em;border-bottom-width:2px}
+.masthead{background:#fffdf7;border-bottom-width:4px;box-shadow:0 4px 16px rgba(14,25,51,.09)}
+.brand-row{padding-top:17px;padding-bottom:17px}
+.brand-badge{filter:drop-shadow(1px 2px 0 rgba(125,22,32,.6))}
+.brand-name{text-shadow:1px 2px 0 #fff,2px 3px 0 rgba(23,40,76,.12)}
+.brand-tagline{letter-spacing:.16em}
+.header-call{background:#fff;border-color:#ddd5c6;box-shadow:0 3px 12px rgba(23,40,76,.07);border-radius:4px}
+.nav-bar{background:var(--navy);border-top:1px solid rgba(255,255,255,.16);box-shadow:0 5px 14px rgba(14,25,51,.15)}
+.nav a{padding:15px 19px;text-shadow:none;transition:background .18s ease,color .18s ease}
+.nav a:first-child{border-left-color:rgba(255,255,255,.13)}
+.nav .highlight{background:var(--gold);text-shadow:none}
+.hero{min-height:590px;border-bottom-width:5px;background-position:center 42%}
+.hero:before{background:linear-gradient(90deg,rgba(7,12,27,.88) 0%,rgba(9,15,31,.63) 43%,rgba(9,15,31,.10) 100%),linear-gradient(0deg,rgba(0,0,0,.38),transparent 55%)}
+.hero-video{opacity:.68;transform:scale(1.08)}
+.hero-content{max-width:720px;padding-top:82px;padding-bottom:78px}
+.hero-kicker{border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);transform:none;letter-spacing:.12em}
+.hero h1{text-shadow:2px 3px 0 rgba(0,0,0,.72),3px 4px 0 rgba(194,34,44,.72);letter-spacing:-.025em}
+.hero p{max-width:540px}
+.btn{border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.42);transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 17px rgba(0,0,0,.21),inset 0 1px 0 rgba(255,255,255,.42)}
+.hero-callout{border:2px solid var(--red);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.22);transform:rotate(1deg)}
+.trust-strip{background:#ffdf71}
+.trust-item{padding-top:20px;padding-bottom:20px}
+.trust-star{text-shadow:none}
+.section{padding:78px 0}
+.section-head{margin-bottom:32px;padding-bottom:19px}
+.section-head:after{width:150px}
+.section-head p{font-size:13px;line-height:1.85}
+.products{background-color:#f4f0e7;background-image:radial-gradient(rgba(167,155,131,.15) .65px,transparent .65px);background-size:10px 10px}
+.category-grid{gap:17px}
+.category{border-radius:5px;box-shadow:0 4px 12px rgba(23,40,76,.07);transition:transform .22s ease,box-shadow .22s ease}
+.category:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(23,40,76,.13)}
+.category-photo{height:175px}
+.category-photo:before{transition:transform .45s ease}
+.photo-label{border-radius:2px;box-shadow:0 2px 7px rgba(0,0,0,.15)}
+.category-copy{padding:20px 18px 17px}
+.category h3{font-size:27px;text-shadow:none}
+.category p{font-size:12px;line-height:1.75}
+.category-link{font-size:10px;letter-spacing:.07em}
+.videos{background:linear-gradient(145deg,#1b2f57 0%,#0e1933 70%);border-top-width:4px;border-bottom-width:4px}
+.video-grid{gap:20px}
+.video-card{border:0;outline:1px solid rgba(255,255,255,.16);border-radius:5px;overflow:hidden;box-shadow:0 8px 22px rgba(0,0,0,.23);transition:transform .2s ease,box-shadow .2s ease}
+.video-card:hover{transform:translateY(-3px);box-shadow:0 12px 27px rgba(0,0,0,.3)}
+.video-info{padding:16px 17px 18px}
+.video-info h3{font-size:24px}
+.about{background:#fffdf8}
+.about-grid{gap:54px}
+.about-copy>p{font-size:13px;line-height:1.9}
+.about-stamp{border-radius:4px;box-shadow:5px 6px 0 rgba(23,40,76,.12);transform:rotate(.5deg)}
+.about-point{border-radius:2px;font-size:11px}
+.locations{background-color:#e8e0d1;background-image:linear-gradient(135deg,rgba(255,255,255,.19) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.19) 50%,rgba(255,255,255,.19) 75%,transparent 75%,transparent);background-size:18px 18px}
+.location-grid{gap:20px}
+.location-card{border-radius:5px;overflow:hidden;box-shadow:0 5px 15px rgba(23,40,76,.08)}
+.location-title{padding:16px 19px}
+.location-body{padding:20px}
+.small-btn{border-radius:3px;box-shadow:0 2px 5px rgba(0,0,0,.05);transition:background .18s ease,transform .18s ease}
+.small-btn:hover{transform:translateY(-1px)}
+.notice{border-radius:3px}
+.safety{border-top-width:4px}
+.safety-item{padding:18px 0}
+.safety-num{border:0;border-radius:3px}
+.footer{border-top-width:5px}
+.footer-main{padding-top:42px;padding-bottom:35px}
+.footer-links a{transition:color .18s ease,border-color .18s ease}
+@media(max-width:900px){
+  .wrap{width:min(100% - 34px,var(--max))}
+  .section{padding:67px 0}
+  .category-grid{gap:13px}
+  .category-photo{height:170px}
+}
+
 @media(max-width:900px){
   .brand-name{font-size:44px}.nav a{padding:14px 11px;font-size:10px}
   .hero{min-height:515px}.hero-content{max-width:600px}
